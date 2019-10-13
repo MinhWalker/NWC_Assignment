@@ -1,18 +1,18 @@
 extends ./layout/common
 
 block content
-	h1 body
+	h1 Text To Speech
 
 	form(action='/', method='POST')
 		.form-group
-			label(for='exampleFormControlSelect1') Example select
+			label(for='exampleFormControlSelect1') Select voice
 			select#exampleFormControlSelect1.form-control.voice(name='voice')
 				option(value='banmai') banmai
 				option(value='leminh') leminh
 				option(value='lannhi') lannhi
 		.form-group
 			label(for='content') Input text  
-			textarea#content.form-control(name='content', type='text')
+			textarea#content.form-control(name='content', type='text', value=value)
 		button.btn.btn-primary Create
 
 	form(action='/create', method='POST')
