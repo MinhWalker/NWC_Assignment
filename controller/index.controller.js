@@ -33,7 +33,7 @@ module.exports.indexPOST = (req, res, next) => {	//request to API
 	        
   			db.set('datas.name', content.async)
   			.write()
-			console.log(content.async);
+			// console.log(content.async);
 	    }
 	});
 	res.redirect('/');
