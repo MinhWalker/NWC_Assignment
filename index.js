@@ -4,7 +4,7 @@ var app = express();
 var indexRoute = require('./routes/index.route.js');
 
 var app = express();
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3001;
 
 app.set('view engine', 'pug');
 app.set('views', './views');

@@ -35,8 +35,9 @@ module.exports.indexPOST = (req, res, next) => {	//request to API
   			.write()
 			// console.log(content.async);
 	    }
+	    res.redirect('/');
 	});
-	res.redirect('/');
+	
 };
 
 module.exports.show = (req, res) => { 	//rend data(mp3 link) to index page
